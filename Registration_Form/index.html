@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Course Registration</h1>
+            <form>
+                <fieldset class="mg-bn">
+                    <legend>Personal Information</legend>
+                    <div class="pd-sp">
+                        <label>Full Name</label><br />
+                        <input type="text" name="text" id="text" required class="in-w" /><br />
+                    </div>
+                    <div class="pd-sp">
+                        <label>Email Address</label><br />
+                        <input type="email" name="email" id="email" required class="in-w" /><br />
+                    </div>
+                    <div class="pd-sp">
+                        <label>Password</label><br />
+                        <input type="password" name="password" id="password" required class="in-w" /><br />
+                    </div>
+                    <div class="pd-sp">
+                        <label>Confirm Password</label><br />
+                        <input type="password" name="cnpass" id="cnpass" required class="in-w" /><br />
+                    </div>
+                </fieldset>
+
+                <fieldset class="mg-bn">
+                    <legend>Demographics</legend>
+                    <label>Gender</label><br>
+
+                    <input type="radio" name="Gender" id="male"><label for="male">Male</label>
+                    <input type="radio" name="Gender" id="female"><label for="female">Female</label>
+                    <input type="radio" name="Gender" id="other"><label for="other">Other</label>
+                    <br /><br />
+
+                    <label>Interests</label><br>
+
+                    <input type="checkbox" name="design" id="design"><label for="design">Design</label>
+                    <input type="checkbox" name="coding" id="coding"><label for="coding">Coding</label>
+                    <input type="checkbox" name="marketing" id="marketing"><label for="marketing">Marketing</label>
+                    <br /><br />
+
+                    <div class="pd-sp">
+                        <label>Country</label><br />
+                        <select class="in-w">
+                            <option selected>Select Country</option>
+                            <option>Yangon</option>
+                            <option>Mandalay</option>
+                            <option>Naypyitaw</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+                <div class="mg-bn pd-textarea">
+                    <label>Short Bio</label>
+                    <textarea class="in-w height"></textarea>
+                </div>
+
+                <button class="in-w ">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
